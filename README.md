@@ -119,3 +119,252 @@ xrun                  Cadence Xcelium 시뮬레이터 실행 명령
 
 
 ```
+---
+<br>
+Xcelium 시뮬레이터 실행 
+<img width="885" height="814" alt="image" src="https://github.com/user-attachments/assets/7eeefb1d-6c50-47e6-ba38-40bfb7d0affe" />  
+<br>
+<img width="872" height="921" alt="image" src="https://github.com/user-attachments/assets/c2866906-4119-4e67-9487-e2bf19859833" />
+<br>
+
+시뮬레이션 wave form 뜸
+<img width="1007" height="630" alt="image" src="https://github.com/user-attachments/assets/c89cbd1b-9b44-46f7-aa5f-58dcf35e4d94" />
+아이콘 누르면 schmetic 볼수 있고 변수 누르면 노란색선으로 확인가능
+<img width="1199" height="623" alt="image" src="https://github.com/user-attachments/assets/610677a9-37ca-45fc-af6c-bbd1540d4432" />
+<br>
+
+force 로 입력주기
+<img width="639" height="722" alt="image" src="https://github.com/user-attachments/assets/e54120fe-8cbc-465f-94fc-43fe281f7687" />
+<br>
+<img width="341" height="207" alt="image" src="https://github.com/user-attachments/assets/0d78bdb6-25ef-4ff6-b05a-2500c75a7166" />
+<br>
+
+a,b,ena,opcode 입력주고 10ns 시뮬레이션하기
+<img width="1341" height="633" alt="image" src="https://github.com/user-attachments/assets/b58e7c54-200c-4402-b9b3-dbc654a1146b" />
+aㅣt + = 으로 파형 전체 확인 가능
+<br>
+
+넣어줄 입력들 작성하기 (test벤치 대신 간단하게 tcl에 입력해서 시뮬레이션 확인)
+<details>
+    ```txt
+    
+force ALU.a = 8'd00; 
+force ALU.b = 8'd00;
+force ALU.opcode = 3'd0; 
+force ALU.ena = 1'b0; 
+run 10ns
+
+force ALU.a = 8'd15; 
+force ALU.b = 8'd5;
+force ALU.opcode = 3'd0; 
+force ALU.ena = 1'b0; 
+run 10ns
+
+force ALU.a = 8'd0; 
+force ALU.b = 8'd0;
+force ALU.opcode = 3'd0; 
+force ALU.ena = 1'b1; 
+run 10ns
+
+force ALU.a = 8'd15; 
+force ALU.b = 8'd5;
+force ALU.opcode = 3'd0;  
+run 10ns
+
+
+force ALU.a = 8'd255; 
+force ALU.b = 8'd1;
+force ALU.opcode = 3'd0;  
+run 10ns
+
+force ALU.a = 8'd127; 
+force ALU.b = 8'd127;
+force ALU.opcode = 3'd0;  
+run 10ns
+
+force ALU.a = 8'd10; 
+force ALU.b = 8'd5;
+force ALU.opcode = 3'd1;  
+run 10ns
+
+force ALU.a = 8'd5; 
+force ALU.b = 8'd10;
+force ALU.opcode = 3'd1;  
+run 10ns
+
+force ALU.a = 8'd255; 
+force ALU.b = 8'd255;
+force ALU.opcode = 3'd1;  
+run 10ns
+
+force ALU.a = 8'd0; 
+force ALU.b = 8'd5;
+force ALU.opcode = 3'd2;  
+run 10ns
+
+force ALU.a = 8'd5; 
+force ALU.b = 8'd6;
+force ALU.opcode = 3'd2;  
+run 10ns
+
+force ALU.a = 8'd15; 
+force ALU.b = 8'd16;
+force ALU.opcode = 3'd2;  
+run 10ns
+
+force ALU.a = 8'd255; 
+force ALU.b = 8'd255;
+force ALU.opcode = 3'd2;  
+run 10ns
+
+force ALU.a = 8'd10; 
+force ALU.b = 8'd2;
+force ALU.opcode = 3'd3;  
+run 10ns
+
+force ALU.a = 8'd15; 
+force ALU.b = 8'd4;
+force ALU.opcode = 3'd3;  
+run 10ns
+
+force ALU.a = 8'd100; 
+force ALU.b = 8'd0;
+force ALU.opcode = 3'd3;  
+run 10ns
+
+force ALU.a = 8'd255; 
+force ALU.b = 8'd1;
+force ALU.opcode = 3'd3;  
+run 10ns
+
+force ALU.a = 8'd10; 
+force ALU.b = 8'd3;
+force ALU.opcode = 3'd4;  
+run 10ns
+
+force ALU.a = 8'd15; 
+force ALU.b = 8'd4;
+force ALU.opcode = 3'd4;  
+run 10ns
+
+force ALU.a = 8'd100; 
+force ALU.b = 8'd0;
+force ALU.opcode = 3'd4;  
+run 10ns
+
+force ALU.a = 8'd8; 
+force ALU.b = 8'd4;
+force ALU.opcode = 3'd4;  
+run 10ns
+
+force ALU.a = 8'd10; 
+force ALU.b = 8'd10;
+force ALU.opcode = 3'd5;  
+run 10ns
+
+force ALU.a = 8'd10; 
+force ALU.b = 8'd5;
+force ALU.opcode = 3'd5;  
+run 10ns
+
+force ALU.a = 8'd255; 
+force ALU.b = 8'd255;
+force ALU.opcode = 3'd5;  
+run 10ns
+
+force ALU.a = 8'd11; 
+force ALU.b = 8'd10;
+force ALU.opcode = 3'd6;  
+run 10ns
+
+force ALU.a = 8'd10; 
+force ALU.b = 8'd11;
+force ALU.opcode = 3'd6;  
+run 10ns
+
+force ALU.a = 8'd10; 
+force ALU.b = 8'd10;
+force ALU.opcode = 3'd6;  
+run 10ns
+
+force ALU.a = 8'd10; 
+force ALU.b = 8'd11;
+force ALU.opcode = 3'd7;  
+run 10ns
+
+force ALU.a = 8'd11; 
+force ALU.b = 8'd10;
+force ALU.opcode = 3'd7;  
+run 10ns
+
+force ALU.a = 8'd10; 
+force ALU.b = 8'd10;
+force ALU.opcode = 3'd7;  
+run 10ns
+
+force ALU.a = 8'd36; 
+force ALU.b = 8'd129;
+force ALU.opcode = 3'd1;  
+run 10ns
+
+force ALU.a = 8'd99; 
+force ALU.b = 8'd13;
+force ALU.opcode = 3'd5;  
+run 10ns
+
+force ALU.a = 8'd101; 
+force ALU.b = 8'd18;
+force ALU.opcode = 3'd1;  
+run 10ns
+
+force ALU.a = 8'd101; 
+force ALU.b = 8'd18;
+force ALU.opcode = 3'd1;  
+run 10ns
+
+force ALU.a = 8'd101; 
+force ALU.b = 8'd18;
+force ALU.opcode = 3'd1;  
+run 10ns
+
+force ALU.a = 8'd13; 
+force ALU.b = 8'd118;
+force ALU.opcode = 3'd5;  
+run 10ns
+
+force ALU.a = 8'd237; 
+force ALU.b = 8'd140;
+force ALU.opcode = 3'd1;  
+run 10ns
+
+force ALU.a = 8'd198; 
+force ALU.b = 8'd197;
+force ALU.opcode = 3'd2;  
+run 10ns
+
+force ALU.a = 8'd229; 
+force ALU.b = 8'd119;
+force ALU.opcode = 3'd2;  
+run 10ns
+
+force ALU.a = 8'd143; 
+force ALU.b = 8'd142;
+force ALU.opcode = 3'd6;  
+run 10ns
+
+force ALU.a = 8'd232; 
+force ALU.b = 8'd197;
+force ALU.opcode = 3'd4;  
+run 10ns
+
+force ALU.a = 8'd198; 
+force ALU.b = 8'd145;
+force ALU.opcode = 3'd5;  
+run 20ns
+
+    ```
+</details>
+
+
+
+
