@@ -7,10 +7,11 @@ vi editor
 -:set number     //모바엑스텀 줄번호 보이게
 
 vi alu.v       //alu.v 파일 만들기
-
 ```
 ---
 
+<details>
+<summary>펼치기/접기 **alu.v** </summary>
 ``` v
 
 // 계산기
@@ -89,6 +90,10 @@ module ALU(
     //end
 endmodule
 ```
+
+</details>
+
+
 
 
 
