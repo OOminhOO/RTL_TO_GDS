@@ -9,6 +9,7 @@ vi editor
 vi alu.v       //alu.v 파일 만들기
 ```
 ---
+
 **alu.v 코드**  
 
 <details>
@@ -124,27 +125,44 @@ xrun                  Cadence Xcelium 시뮬레이터 실행 명령
 Xcelium 시뮬레이터 실행 
 <img width="885" height="814" alt="image" src="https://github.com/user-attachments/assets/7eeefb1d-6c50-47e6-ba38-40bfb7d0affe" />  
 <br>
+<br>
+<br>
 <img width="872" height="921" alt="image" src="https://github.com/user-attachments/assets/c2866906-4119-4e67-9487-e2bf19859833" />
+<br>
+<br>
 <br>
 
 시뮬레이션 wave form 뜸
 <img width="1007" height="630" alt="image" src="https://github.com/user-attachments/assets/c89cbd1b-9b44-46f7-aa5f-58dcf35e4d94" />
 아이콘 누르면 schmetic 볼수 있고 변수 누르면 노란색선으로 확인가능
+<br>
+<br>
 <img width="1199" height="623" alt="image" src="https://github.com/user-attachments/assets/610677a9-37ca-45fc-af6c-bbd1540d4432" />
+<br>
+<br>
 <br>
 
 force 로 입력주기
+<br>
 <img width="639" height="722" alt="image" src="https://github.com/user-attachments/assets/e54120fe-8cbc-465f-94fc-43fe281f7687" />
+<br>
+<br>
 <br>
 <img width="341" height="207" alt="image" src="https://github.com/user-attachments/assets/0d78bdb6-25ef-4ff6-b05a-2500c75a7166" />
 <br>
-
+<br>
+<br>
 a,b,ena,opcode 입력주고 10ns 시뮬레이션하기
+<br>
 <img width="1341" height="633" alt="image" src="https://github.com/user-attachments/assets/b58e7c54-200c-4402-b9b3-dbc654a1146b" />
+<br>
+<br>
 aㅣt + = 으로 파형 전체 확인 가능
 <br>
-
+<br>
+<br>
 넣어줄 입력들 작성하기 (test벤치 대신 간단하게 tcl에 입력해서 시뮬레이션 확인)
+<br>
 <details>
     ```txt
     
@@ -366,6 +384,8 @@ run 20ns
 </details>
 
 ---
+<br>
+<br>
 <br>
 tcl에 입력시 파형확인가능
 <img width="1911" height="351" alt="image" src="https://github.com/user-attachments/assets/af1cf07f-5efb-4f3c-8670-b63fb072bca4" />
