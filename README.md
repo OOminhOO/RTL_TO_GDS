@@ -166,7 +166,7 @@ aㅣt + = 으로 파형 전체 확인 가능
 <details>  
     <br>
     
-    ```txt
+```txt
     
 force ALU.a = 8'd00; 
 force ALU.b = 8'd00;
@@ -382,7 +382,9 @@ force ALU.b = 8'd145;
 force ALU.opcode = 3'd5;  
 run 20ns
 
-    ```
+```
+
+  
 </details>
 
 ---
