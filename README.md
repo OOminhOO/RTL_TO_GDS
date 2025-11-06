@@ -9,7 +9,7 @@ vi editor
 vi alu.v       //alu.v 파일 만들기
 ```
 ---
-
+**alu.v 코드**
 <details>
 <summary>펼치기/접기 **alu.v** </summary>
 ``` v
@@ -90,15 +90,25 @@ module ALU(
     //end
 endmodule
 ```
-
 </details>
 
 
 
-
-
-``` c
+``` txt
 //work 폴더 만들기 그리고 work폴더로 이동
 mkdir -p work
 cd work
+
+xrun -gui -access +rwc ../alu.v  -log alu_sim_gui.log &    //Xcelium 시뮬레이터 실행
+
+옵션 및 인자           설명
+---------------------------------------------------------------
+xrun                  Cadence Xcelium 시뮬레이터 실행 명령
+-gui                  GUI 모드로 실행 (파형 보기 등 그래픽 인터페이스 제공)
+-access +rwc          신호에 대해 읽기(Read), 쓰기(Write), 연결(Connection) 권한 부여
+../alu.v              시뮬레이션에 사용할 Verilog 소스 파일 (ALU 모듈)
+-log alu_sim_gui.log  시뮬레이션 로그를 해당 파일에 저장
+&                     명령을 백그라운드에서 실행 (터미널을 점유하지 않음)
+
+
 ```
