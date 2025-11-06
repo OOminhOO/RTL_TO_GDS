@@ -165,6 +165,7 @@ aㅣt + = 으로 파형 전체 확인 가능
 <br>
 <details>  
     <br>
+    
     ```txt
     
 force ALU.a = 8'd00; 
