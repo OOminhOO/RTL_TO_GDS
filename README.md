@@ -9,7 +9,8 @@ vi editor
 vi alu.v       //alu.v 파일 만들기
 ```
 ---
-**alu.v 코드**
+**alu.v 코드**  
+
 <details>
 <summary>펼치기/접기 **alu.v** </summary>
 ``` v
@@ -95,6 +96,7 @@ endmodule
 
 
 </details>
+
 
 
 
