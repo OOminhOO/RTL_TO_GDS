@@ -365,6 +365,12 @@ run 20ns
     ```
 </details>
 
+---
+<br>
+tcl에 입력시 파형확인가능
+<img width="1911" height="351" alt="image" src="https://github.com/user-attachments/assets/af1cf07f-5efb-4f3c-8670-b63fb072bca4" />
+
+
 
 
 
