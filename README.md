@@ -12,8 +12,9 @@ vi alu.v       //alu.v 파일 만들기
 **alu.v 코드**  
 
 <details>
-<summary>펼치기/접기 **alu.v** </summary>
-``` v
+<summary>펼치기/접기 **alu.v** </summary>  
+    
+```verilog
 
 // 계산기
 // alu.v
