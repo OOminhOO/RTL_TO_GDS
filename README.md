@@ -163,7 +163,8 @@ aㅣt + = 으로 파형 전체 확인 가능
 <br>
 넣어줄 입력들 작성하기 (test벤치 대신 간단하게 tcl에 입력해서 시뮬레이션 확인)
 <br>
-<details>
+<details>  
+    <br>
     ```txt
     
 force ALU.a = 8'd00; 
