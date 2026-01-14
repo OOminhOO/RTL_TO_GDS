@@ -1,5 +1,11 @@
 # RTL_TO_GDS
 
+상세정리 Notion 링크  
+https://flashy-gopher-3c9.notion.site/8bit-mini-CPU-RTL-TO-GDS-2bb52e880248806699f2f1fbb98cb400?source=copy_link
+
+
+<details>
+<summary>펼치기/접기 **alu.v** </summary>  
 MobaXterm에서 Cadence Xcelium 실행 alu verliog 모듈 및 테스트 벤치 시뮬레이션.
 
 ```
@@ -394,7 +400,7 @@ run 20ns
 tcl에 입력시 파형확인가능
 <img width="1911" height="351" alt="image" src="https://github.com/user-attachments/assets/af1cf07f-5efb-4f3c-8670-b63fb072bca4" />
 
-
+</details>
 
 
 
