@@ -5,7 +5,7 @@ https://flashy-gopher-3c9.notion.site/8bit-mini-CPU-RTL-TO-GDS-2bb52e88024880669
 
 
 <details>
-<summary>펼치기/접기 **alu.v** </summary>  
+<summary>펼치기/접기 Xcelium </summary>  
 MobaXterm에서 Cadence Xcelium 실행 alu verliog 모듈 및 테스트 벤치 시뮬레이션.
 
 ```
